@@ -3,11 +3,13 @@ import json
 from urllib.parse import urljoin
 
 from .categories import Categories
+from .products import Products
 from .errors import BadRequestError, UnauthorizedError, UnexpectedError
 
 # installed sub-module
 installed_modules = {
-    "categories": Categories
+    "categories": Categories,
+    "products": Products
 }
 
 

@@ -36,12 +36,15 @@ class BaseError(Exception):
 
 
 class BadRequestError(BaseError):
-    pass
+    def __init__(self, response):
+        super().__init__(response)
 
 
 class UnauthorizedError(BaseError):
-    pass
+    def __init__(self, response):
+        super().__init__(response)
 
 
 class UnexpectedError(BaseError):
-    pass
+    def __init__(self, response):
+        super().__init__(response)
